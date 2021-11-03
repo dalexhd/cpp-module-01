@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/31 18:11:15 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/02 17:57:37 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/03 18:01:36 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,11 @@ class Zombie
 	private:
 		std::string	name;
 	public:
-		void	announce(void) const;
-		void	randomChump(std::string name);
-		Zombie*	newZombie(std::string name);
+		Zombie();
+		void	setName(std::string name);
+		void	announce(void);
 		~Zombie();
-		Zombie(std::string name);
 };
+
+Zombie* newZombie(std::string name);
+void	randomChump(std::string name);
