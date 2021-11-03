@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:39:07 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/03 19:37:07 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/03 19:42:06 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int main(void)
 	string = "HI THIS IS BRAIN";
 	stringPTR = &string;
 
-	std::cout << "Address of string: " << (void*) &string << std::endl;
+	std::cout << "Address of string: " << &string << std::endl;
 	std::cout << "Address of stringPTR: " << stringPTR << std::endl;
-	std::cout << "Address of stringREF: " << (void*) &stringREF << std::endl;
+	std::cout << "Address of stringREF: " << &stringREF << std::endl;
 }
