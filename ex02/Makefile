@@ -1,4 +1,4 @@
-OUTPUT				=	easy
+OUTPUT				=	fire
 
 CC					=	@clang++
 SH					=	@bash
@@ -21,7 +21,7 @@ COUNTER				= 	0
 COLUMNS				=	$(shell stty size | cut -d" " -f2)
 
 # Mandatory part
-SRCS				=	main.cpp
+SRCS				=	main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 SOURCES				=	$(SRCS)
 
 # Mandatory Objects

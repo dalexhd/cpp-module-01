@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/02 16:39:07 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/04 18:18:21 by aborboll         ###   ########.fr       */
+/*   Created: 2021/11/04 18:18:44 by aborboll          #+#    #+#             */
+/*   Updated: 2021/11/04 18:19:56 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,13 @@
 #include <iostream>
 #include <string.h>
 
-int main(void)
+class Weapon
 {
-}
+	private:
+		std::string	type;
+	public:
+		Weapon();
+		void	getType();
+		void	setType(std::string name);
+		~Weapon();
+};
