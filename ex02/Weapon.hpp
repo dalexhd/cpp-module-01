@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:18:44 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/04 18:19:56 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/04 18:25:02 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class Weapon
 		std::string	type;
 	public:
 		Weapon();
-		void	getType();
-		void	setType(std::string name);
+		std::string	getType(void);
+		void		setType(std::string name);
 		~Weapon();
 };
