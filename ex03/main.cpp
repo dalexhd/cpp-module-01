@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:39:07 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/08 10:05:33 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/08 17:14:21 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,5 @@ int main()
 		club.setType("some other type of club");
 		jim.attack();
 	}
+	return (0);
 }
