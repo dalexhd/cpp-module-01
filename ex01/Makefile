@@ -3,7 +3,7 @@ OUTPUT				=	braiiiiiiinnnzzz
 CC					=	@clang++
 SH					=	@bash
 RM					=	@/bin/rm -rf
-FLAGS				=	-Wextra -Wall -Werror -g1 -fsanitize=address
+FLAGS				=	-Wextra -Wall -Werror -g -fsanitize=address
 LEAKS_FLAGS			=	--tool=memcheck --leak-check=full --leak-resolution=high --show-leak-kinds=all --track-origins=yes
 
 HEADER_DIR			=	.
