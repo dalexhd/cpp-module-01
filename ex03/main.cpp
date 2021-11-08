@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 16:39:07 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/05 19:24:00 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/08 10:05:33 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int main()
 		bob.attack();
 		club.setType("some other type of club");
 		bob.attack();
-		std::cout << bob;
 	}
 	{
 		Weapon club = Weapon("crude spiked club");
