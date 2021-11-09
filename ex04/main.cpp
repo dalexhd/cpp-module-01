@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 18:28:31 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/09 18:25:32 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/09 21:51:45 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,9 +68,8 @@ int main(int argc, char **argv)
 		std::cout << "Could not open file " << std::string(argv[1]) + ".example" << "" << std::endl;
 		return (-1);
 	}
-	out_stream << content << std::endl;
+	out_stream << content;
 	out_stream.close();
 	in_stream.close();
 	return (0);
 }
-
