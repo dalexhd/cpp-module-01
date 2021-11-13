@@ -6,7 +6,7 @@
 /*   By: aborboll <aborboll@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/08 18:28:31 by aborboll          #+#    #+#             */
-/*   Updated: 2021/11/09 21:51:45 by aborboll         ###   ########.fr       */
+/*   Updated: 2021/11/13 15:27:58 by aborboll         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,14 @@ std::string str_replace(std::string str, std::string search, std::string replace
 			}
 			else if (str[i] == search[x] && x + 1 == search.length())
 			{
-				res = res.substr(0, i - search.length() + 1) + replace;
+				res = res.substr(0, res.length() - search.length() + 1) + replace;
 				break ;
 			}
 			res += str[i];
 			i++;
 		}
 	}
-	return (res);
+	return (res + '\n');
 }
 
 int main(int argc, char **argv)
@@ -54,14 +54,12 @@ int main(int argc, char **argv)
 	in_stream.open(argv[1]);
 	if (in_stream.fail())
 	{
-		std::cout << "Could not open " << argv[1] << " file." << std::endl;;
+		std::cout << "Could not open " << argv[1] << " file." << std::endl;
+		in_stream.close();
 		return (-1);
 	}
 	while (std::getline(in_stream, str))
-	{
 		content += str_replace(str, argv[2], argv[3]);
-		content.push_back('\n');
-	}
 	out_stream.open(std::string(argv[1]) + ".example");
 	if (out_stream.fail())
 	{
